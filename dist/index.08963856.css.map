@@ -1,0 +1,1 @@
+{"mappings":"ACAA;;;;;;ADEA","sources":["src/style/style.scss","src/style/reset.scss"],"sourcesContent":["@import \"reset\";\r\n\r\n.header {\r\n    background: aqua;\r\n    text-align: center;\r\n}",null],"names":[],"version":3,"file":"index.08963856.css.map","sourceRoot":"/__parcel_source_root/"}
