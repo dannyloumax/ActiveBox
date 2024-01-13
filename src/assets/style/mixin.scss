@@ -1,0 +1,33 @@
+@mixin container() {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@mixin font($color, $fontFamily, $fontSize, $fontWeight, $lineHeight) {
+    color: $color;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+
+@mixin btn () {
+    max-width: 370px;
+    width: 100%;
+    background: #FF4343;
+    border: none;
+    padding: 26px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include font(#FFF, $raleway, 24px, 900, 28.18px);
+
+    &:hover {
+        background: #E71414;
+    }
+
+    &:active {
+        background: #FF4343;
+        box-shadow: 4px 4px 30px 0px #FF4343;
+    }
+}
