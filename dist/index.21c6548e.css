@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (width <= 767px) {
+  .header {
+    padding: 20px 0;
+  }
+}
+
+.header__container {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+}
+
+.header__container:after {
+  content: "";
+  border-bottom: 1px solid #babbc5;
+  width: calc(100% - 30px);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (width <= 767px) {
+  .header__container:after {
+    display: none;
+  }
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo svg {
+  width: 100%;
+  max-width: 184px;
+  height: 26px;
+}
+
+@media only screen and (width <= 767px) {
+  .header__logo {
+    width: 100%;
+    max-width: 103px;
+  }
+}
+
+.header__dropdown {
+  display: none;
+}
+
+@media only screen and (width <= 767px) {
+  .header__dropdown {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.header__nav {
+  display: flex;
+}
+
+@media only screen and (width <= 767px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.header__link {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid #0000;
+  min-width: 134px;
+  padding: 36px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.26px;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  border-bottom: 3px solid #babbc5;
+}
+
+.header__link:active {
+  color: #e71414;
+  border-bottom: 3px solid #e71414;
+}
+
+@media only screen and (width <= 1024px) and (width >= 993px) {
+  .header__link {
+    min-width: 114px;
+    line-height: 14.09px;
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 992px) {
+  .header__link {
+    min-width: 100px;
+    line-height: 13px;
+  }
+}
+
+.banner {
+  background: url("banner.6908d379.png") center / cover;
+  margin: 0 auto;
+  padding: 230px 0 120px;
+  position: relative;
+}
+
+@media only screen and (width <= 1024px) and (width >= 768px) {
+  .banner {
+    padding: 257px 0 126px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .banner {
+    padding: 106px 0 52px;
+  }
+}
+
+.banner:before {
+  content: "";
+  opacity: .8;
+  background: #252b49;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner__container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.banner__title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-family: Raleway, sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 75.14px;
+}
+
+@media only screen and (width <= 1024px) and (width >= 768px) {
+  .banner__title {
+    margin-bottom: 62px;
+    font-size: 48px;
+    line-height: 56.35px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .banner__title {
+    margin-bottom: 33px;
+    font-size: 36px;
+    line-height: 42.26px;
+  }
+}
+
+.banner__description {
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.18px;
+}
+
+@media only screen and (width <= 1024px) and (width >= 944px) {
+  .banner__description {
+    max-width: 900px;
+    margin: 0 auto 89px;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+}
+
+@media only screen and (width <= 943px) and (width >= 768px) {
+  .banner__description {
+    max-width: 800px;
+    margin: 0 auto 89px;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .banner__description {
+    margin-bottom: 0 auto 49px;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+}
+
+.banner__btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  background: #ff4343;
+  border: none;
+  width: 100%;
+  max-width: 370px;
+  padding: 26px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28.18px;
+}
+
+.banner__btn:hover {
+  background: #e71414;
+}
+
+.banner__btn:active {
+  background: #ff4343;
+  box-shadow: 4px 4px 30px #ff4343;
+}
+
+@media only screen and (width <= 1024px) and (width >= 768px) {
+  .banner__btn {
+    max-width: 314px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .banner__btn {
+    max-width: 100%;
+    padding: 16px 0;
+  }
+}
+
+/*# sourceMappingURL=index.21c6548e.css.map */
