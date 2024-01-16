@@ -7,10 +7,15 @@
 .header {
   z-index: 1;
   width: 100%;
-  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+@media only screen and (width <= 767px) {
+  .header {
+    padding: 20px 0;
+  }
 }
 
 .header__container {
@@ -54,7 +59,6 @@
   .header__logo {
     width: 100%;
     max-width: 103px;
-    height: 14px;
   }
 }
 
@@ -173,7 +177,7 @@
   }
 }
 
-@media only screen and (width <= 768px) {
+@media only screen and (width <= 767px) {
   .banner__title {
     margin-bottom: 33px;
     font-size: 36px;
