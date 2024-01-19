@@ -281,9 +281,7 @@
 
 @media only screen and (width <= 767px) {
   .features__container {
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
+    grid-template-columns: 1fr;
   }
 }
 
