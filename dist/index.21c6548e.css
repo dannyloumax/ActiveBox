@@ -123,19 +123,21 @@
 
 .banner {
   background: url("banner.6908d379.png") center / cover;
-  margin: 0 auto;
+  margin: 0 auto 116px;
   padding: 230px 0 120px;
   position: relative;
 }
 
 @media only screen and (width <= 1024px) and (width >= 768px) {
   .banner {
+    margin-bottom: 78px;
     padding: 257px 0 126px;
   }
 }
 
 @media only screen and (width <= 767px) {
   .banner {
+    margin-bottom: 40px;
     padding: 106px 0 52px;
   }
 }
@@ -255,6 +257,117 @@
   .banner__btn {
     max-width: 100%;
     padding: 16px 0;
+  }
+}
+
+.features {
+  margin-bottom: 116px;
+}
+
+.features__container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 89px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) {
+  .features__container {
+    row-gap: 50px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .features__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.features .feature {
+  text-align: center;
+}
+
+.features .feature__icon {
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 29px;
+  display: inline-flex;
+}
+
+@media only screen and (width <= 1024px) and (width >= 768px) {
+  .features .feature__icon {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 23.5px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .features .feature__icon {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 21px;
+  }
+}
+
+.features .feature__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.features .feature__title {
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 20.43px;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28.18px;
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) {
+  .features .feature__title {
+    color: #2d3033;
+    margin-bottom: 3.95px;
+    padding: 20px;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21.13px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .features .feature__title {
+    color: #2d3033;
+    margin-bottom: 0;
+    padding: 16px;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21.13px;
+  }
+}
+
+.features .feature__description {
+  color: #6c7279;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+}
+
+@media only screen and (width <= 1024px) {
+  .features .feature__description {
+    color: #6c7279;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
   }
 }
 
