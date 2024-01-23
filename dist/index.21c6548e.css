@@ -617,4 +617,16 @@ html {
   }
 }
 
+.team .member__social-icon path {
+  transition: all .5s linear;
+}
+
+.team .member__social-icon path:hover {
+  fill: #00f;
+}
+
+.team .member__social-icon path:active {
+  fill: #409bf0;
+}
+
 /*# sourceMappingURL=index.21c6548e.css.map */
