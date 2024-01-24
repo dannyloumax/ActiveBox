@@ -245,15 +245,6 @@ html {
   line-height: 28.18px;
 }
 
-.banner__btn:hover {
-  background: #e71414;
-}
-
-.banner__btn:active {
-  background: #ff4343;
-  box-shadow: 4px 4px 30px #ff4343;
-}
-
 @media only screen and (width <= 1024px) and (width >= 768px) {
   .banner__btn {
     max-width: 314px;
@@ -265,6 +256,15 @@ html {
     max-width: 100%;
     padding: 16px 0;
   }
+}
+
+.banner__btn:hover {
+  background: #e71414;
+}
+
+.banner__btn:active {
+  background: #ff4343;
+  box-shadow: 4px 4px 30px #ff4343;
 }
 
 .features {
@@ -641,6 +641,117 @@ html {
 
 .team .member__social-icon path:active {
   fill: #409bf0;
+}
+
+.download {
+  margin-bottom: 114px;
+}
+
+@media only screen and (width <= 1024px) {
+  .download {
+    margin-bottom: 78px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .download {
+    margin-bottom: 45px;
+  }
+}
+
+.download__container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.download__title {
+  color: #000;
+  margin-bottom: 22px;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.22px;
+}
+
+@media only screen and (width <= 1024px) {
+  .download__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28.18px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .download__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+}
+
+.download__description {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 47.71px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.13px;
+}
+
+@media only screen and (width <= 1024px) {
+  .download__description {
+    margin-bottom: 43.29px;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .download__description {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 15.26px;
+  }
+}
+
+.download__btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  background: #ff4343;
+  border: none;
+  width: 100%;
+  max-width: 370px;
+  padding: 26px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28.18px;
+}
+
+@media only screen and (width <= 1024px) and (width >= 768px) {
+  .download__btn {
+    max-width: 314px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .download__btn {
+    max-width: 100%;
+    padding: 16px 0;
+  }
+}
+
+.download__btn:hover {
+  background: #e71414;
+}
+
+.download__btn:active {
+  background: #ff4343;
+  box-shadow: 4px 4px 30px #ff4343;
 }
 
 /*# sourceMappingURL=index.21c6548e.css.map */

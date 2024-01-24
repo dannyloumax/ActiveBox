@@ -21,6 +21,14 @@
     text-transform: uppercase;
     cursor: pointer;
     @include font(#FFF, $raleway, 24px, 900, 28.18px);
+    @media only screen and (max-width: 1024px)  and (min-width: 768px) {
+        max-width: 314px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        max-width: 100%;
+        padding: 16px 0;
+    }
 
     &:hover {
         background: #E71414;
