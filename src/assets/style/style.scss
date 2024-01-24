@@ -456,6 +456,89 @@ html {
     }
 }
 
+.testimonials {
+    margin-bottom: 114px;
+    @media only screen and (max-width: 1024px) {
+        margin-bottom: 77.51px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 45px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 45px;
+        height: auto;
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 34px;
+        }
+        @media only screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            margin-bottom: 32.5px;
+        }
+    }
+    &__wrapper-image {
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (max-width: 767px) {
+            aspect-ratio: 4/3;
+        }
+    }
+    &__image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__info {
+        padding: 130px 129px 116px;
+        background-color:#5C3249;
+        @media only screen and (max-width: 1024px) {
+            padding: 60px 88px 110px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            padding: 20px 20px 95px;
+        }
+
+    }
+    &__quote {
+        @include font(#FFF, $cardo, 36px, 400, 48.74px);
+        font-style: italic;
+        text-transform: capitalize;
+        margin-bottom: 17px;
+        max-width: 471px;
+        @media only screen and (max-width: 1024px) {
+            @include font(#FFF, $cardo, 24px, 400, 32.5px);
+            margin-bottom: 14px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+            margin: 0 auto 23px;
+        }
+    }
+    &__author {
+        @include font(#FFF, $raleway, 13px, 700, 15.26px);
+        text-transform: uppercase;
+        max-width: 471px;
+        @media only screen and (max-width: 1024px) {
+            @include font(#FFF, $raleway, 12px, 700, 14.09px);
+        }
+
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
 .download {
     margin-bottom: 114px;
     @media only screen and (max-width: 1024px) {
