@@ -103,6 +103,7 @@ html {
   font-size: 13px;
   font-weight: 700;
   line-height: 15.26px;
+  transition: all .3s linear;
 }
 
 .header__link:hover {
@@ -243,6 +244,7 @@ html {
   font-size: 24px;
   font-weight: 900;
   line-height: 28.18px;
+  transition: all .3s linear;
 }
 
 @media only screen and (width <= 1024px) and (width >= 768px) {
@@ -645,37 +647,32 @@ html {
 
 .testimonials {
   margin-bottom: 114px;
+  padding-bottom: 45px;
 }
 
 @media only screen and (width <= 1024px) {
   .testimonials {
     margin-bottom: 77.51px;
+    padding-bottom: 33px;
   }
 }
 
 @media only screen and (width <= 767px) {
   .testimonials {
     margin-bottom: 45px;
+    padding-bottom: 32px;
   }
 }
 
-.testimonials__container {
+.testimonials__slide {
   grid-template-columns: repeat(2, 1fr);
   height: auto;
-  margin-bottom: 45px;
   display: grid;
 }
 
-@media only screen and (width <= 1024px) {
-  .testimonials__container {
-    margin-bottom: 34px;
-  }
-}
-
 @media only screen and (width <= 767px) {
-  .testimonials__container {
+  .testimonials__slide {
     grid-template-columns: 1fr;
-    margin-bottom: 32.5px;
   }
 }
 
@@ -774,6 +771,45 @@ html {
   }
 }
 
+.testimonials .swiper-pagination {
+  justify-content: center;
+  column-gap: 25px;
+  display: flex;
+}
+
+.testimonials .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #0000;
+  border: 2px solid #7e5d6f;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  transition: all .3s linear;
+}
+
+@media only screen and (width <= 1024px) {
+  .testimonials .swiper-pagination-bullet {
+    width: 9.5px;
+    height: 9.5px;
+  }
+}
+
+.testimonials .swiper-pagination-bullet:hover {
+  border: 3px solid #7e5d6f;
+}
+
+.testimonials .swiper-pagination-bullet-active {
+  background-color: #7e5d6f;
+}
+
+.testimonials .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .testimonials .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.testimonials .swiper-horizontal > .swiper-pagination-bullets, .testimonials .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
 .download {
   margin-bottom: 114px;
 }
@@ -861,6 +897,7 @@ html {
   font-size: 24px;
   font-weight: 900;
   line-height: 28.18px;
+  transition: all .3s linear;
 }
 
 @media only screen and (width <= 1024px) and (width >= 768px) {

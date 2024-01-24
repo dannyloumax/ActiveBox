@@ -79,6 +79,7 @@ html {
         min-width: 134px;
         text-align: center;
         text-transform: uppercase;
+        transition: all 0.3s linear;
         border-bottom: 3px solid transparent;
 
         &:hover {
@@ -458,25 +459,23 @@ html {
 
 .testimonials {
     margin-bottom: 114px;
+    padding-bottom: 45px;
     @media only screen and (max-width: 1024px) {
         margin-bottom: 77.51px;
+        padding-bottom: 33px;
     }
 
     @media only screen and (max-width: 767px) {
         margin-bottom: 45px;
+        padding-bottom: 32px;
     }
 
-    &__container {
+    &__slide {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 45px;
         height: auto;
-        @media only screen and (max-width: 1024px) {
-            margin-bottom: 34px;
-        }
         @media only screen and (max-width: 767px) {
             grid-template-columns: 1fr;
-            margin-bottom: 32.5px;
         }
     }
     &__wrapper-image {
@@ -536,6 +535,42 @@ html {
             text-align: center;
             margin: 0 auto;
         }
+    }
+
+    & .swiper-pagination {
+        display: flex;
+        column-gap: 25px;
+        justify-content: center;
+
+        &-bullet {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #7E5D6F;
+            opacity: 1;
+            transition: all 0.3s linear;
+            @media only screen and (max-width: 1024px) {
+                width: 9.5px;
+                height: 9.5px;
+            }
+
+            &:hover {
+                border: 3px solid #7E5D6F;
+            }
+
+            &-active {
+                background-color: #7E5D6F;
+            }
+        }
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 0;
     }
 }
 

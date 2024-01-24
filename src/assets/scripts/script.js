@@ -41,9 +41,9 @@
             menu.classList.remove('open');
         }
 
-          var swiper = new Swiper(".testimonialsSwiper", {
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
+        var swiper = new Swiper(".testimonialsSwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
