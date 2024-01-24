@@ -2,6 +2,10 @@
 @import "mixin";
 @import "var";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
     width: 100%;
     position: fixed;
@@ -74,7 +78,6 @@
         padding: 36px 0;
         min-width: 134px;
         text-align: center;
-        text-decoration: none;
         text-transform: uppercase;
         border-bottom: 3px solid transparent;
 
@@ -270,3 +273,194 @@
     }
 } 
 
+.works {
+    margin-bottom: 114px;
+    @media only screen and (max-width: 1024px) {
+        margin-bottom: 78px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 35px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 1px;
+        gap: 2px;
+        @media only screen and (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .project {
+        position: relative;
+        padding-top: 100%;
+
+        &__wrapper-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff4343cc;
+            transition: all 0.3s linear;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:active {
+                background-color: #b90c0ccc;
+            }
+        }
+
+        &__title {
+            @include font(#FFF, $raleway, 24px, 900, 28.18px);
+            margin-bottom: 20.57px;
+            text-transform: uppercase;
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                @include font(#FFF, $raleway, 18px, 900, 21.13px);
+                margin-bottom: 12.81px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 4.63px;
+            }
+        }
+
+        &__description {
+            @include font(#FFF, $raleway, 18px, 400, 21.13px);
+
+            @media only screen and (max-width: 1024px) {
+                @include font(#FFF, $raleway, 18px, 400, 16.44px);
+            }
+        }
+    }
+}
+
+.team {
+    margin-bottom: 114px;
+    @media only screen and (max-width: 1024px) {
+        margin-bottom: 78px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 35px;
+    }
+
+    &__container {
+        @include container();
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        @media only screen and (max-width: 1024px) {
+            column-gap: 25px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            row-gap: 49px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .member {
+        &__wrapper-photo {
+            margin-bottom: 30px;
+            aspect-ratio: 1;
+            display: flex;
+            @media only screen and (max-width: 1024px) {
+                margin-bottom: 27px;
+            }
+            
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 28px;
+            }
+        }
+
+        &__photo {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__info {
+            margin-bottom: 37.86px;
+            @media only screen and (max-width: 1024px) {
+                margin-bottom: 39.2px;
+            }
+
+            @media only screen and (max-width:767px) {
+                margin-bottom: 55.15px;
+            }
+
+        }
+
+        &__name {
+            @include font(#2D3033, $raleway, 24px, 700, 28.18px);
+            text-transform: capitalize;
+            margin-bottom: 5.29px;
+            @media only screen and (max-width: 1024px) {
+                font-size: 18px;
+                line-height: 21.13px;
+                margin-bottom: 4.6px;
+            }
+        }
+
+        &__position {
+            @include font(#FF4343, $raleway, 18px, 400, 21.13px);
+            text-transform: uppercase;
+            margin-bottom: 17.86px;
+            @media only screen and (max-width: 1024px) {
+                font-size: 14px;
+                line-height: 16.44px;
+                margin-bottom: 22.45px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 38.49px;
+            }
+        }
+
+        &__text {
+            @include font(#6C7279, $raleway, 18px, 400, 21.13px);
+            @media only screen and (max-width: 1024px) {
+                font-size: 14px;
+                line-height: 16.44px;
+            }
+        }
+
+        &__social-icon {
+            display: inline-flex;
+            & path {
+            transition: all 0.5s linear;
+            
+                &:hover {
+                    fill: blue;
+                }
+        
+                &:active {
+                    fill: #409bf0;
+                }
+            }
+        }
+    }
+}

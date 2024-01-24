@@ -1,5 +1,5 @@
 // Получаем ссылку на элемент
-let scrollingElement = document.querySelector("header__container");
+let scrollingElement = document.querySelector(".header");
 // Функция, которая будет вызываться при прокрутке
 function handleScroll() {
     // Проверяем, насколько прокручена страница по вертикали
