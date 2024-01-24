@@ -530,7 +530,9 @@ html {
 }
 
 .team .member__wrapper-photo {
+  aspect-ratio: 1;
   margin-bottom: 30px;
+  display: flex;
 }
 
 @media only screen and (width <= 1024px) {
@@ -550,6 +552,22 @@ html {
   object-position: center;
   width: 100%;
   height: 100%;
+}
+
+.team .member__info {
+  margin-bottom: 37.86px;
+}
+
+@media only screen and (width <= 1024px) {
+  .team .member__info {
+    margin-bottom: 39.2px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .team .member__info {
+    margin-bottom: 55.15px;
+  }
 }
 
 .team .member__name {
@@ -596,7 +614,6 @@ html {
 
 .team .member__text {
   color: #6c7279;
-  margin-bottom: 37.86px;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -605,16 +622,13 @@ html {
 
 @media only screen and (width <= 1024px) {
   .team .member__text {
-    margin-bottom: 39.2px;
     font-size: 14px;
     line-height: 16.44px;
   }
 }
 
-@media only screen and (width <= 767px) {
-  .team .member__text {
-    margin-bottom: 55.15px;
-  }
+.team .member__social-icon {
+  display: inline-flex;
 }
 
 .team .member__social-icon path {
