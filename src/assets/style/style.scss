@@ -189,6 +189,7 @@ html {
 }
 
 .features {
+    scroll-margin-top: 90px;
     margin-bottom: 116px;
 
     &__container {
@@ -266,6 +267,7 @@ html {
 } 
 
 .works {
+    scroll-margin-top: 90px;
     margin-bottom: 114px;
     @media only screen and (max-width: 1024px) {
         margin-bottom: 78px;
@@ -349,6 +351,7 @@ html {
 }
 
 .team {
+    scroll-margin-top: 90px;
     margin-bottom: 114px;
     @media only screen and (max-width: 1024px) {
         margin-bottom: 78px;
@@ -458,6 +461,7 @@ html {
 }
 
 .testimonials {
+    scroll-margin-top: 90px;
     margin-bottom: 114px;
     padding-bottom: 45px;
     @media only screen and (max-width: 1024px) {
@@ -575,6 +579,7 @@ html {
 }
 
 .download {
+    scroll-margin-top: 90px;
     margin-bottom: 114px;
     @media only screen and (max-width: 1024px) {
         margin-bottom: 78px;
