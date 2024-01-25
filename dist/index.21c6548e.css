@@ -641,14 +641,16 @@ html {
   display: inline-flex;
 }
 
+.team .member__social-icon path {
+  transition: all .5s linear;
+}
+
 .team .member__social-icon:hover path {
   fill: #00f;
-  transition: all .5s linear;
 }
 
 .team .member__social-icon:active path {
   fill: #409bf0;
-  transition: all .5s linear;
 }
 
 .testimonials {
@@ -1054,14 +1056,16 @@ html {
   display: inline-flex;
 }
 
+.footer__social-icon path {
+  transition: all .5s linear;
+}
+
 .footer__social-icon:hover path {
   fill: #04ff00;
-  transition: all .5s linear;
 }
 
 .footer__social-icon:active path {
   fill: #f0ea40;
-  transition: all .5s linear;
 }
 
 .footer__wrapper-additional {

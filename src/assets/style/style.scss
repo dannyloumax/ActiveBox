@@ -450,14 +450,18 @@ html {
 
         &__social-icon {
             display: inline-flex;
+
+            & path {
+                transition: all 0.5s linear; 
+            }
   
             &:hover path {
-                transition: all 0.5s linear;
+
                 fill: #0000ff;
             }
         
-             &:active path {
-                transition: all 0.5s linear;
+            &:active path {
+
                 fill: #409bf0;
             }
         }
@@ -722,14 +726,17 @@ html {
 
     &__social-icon {
     display: inline-flex;
+
+        & path {
+            transition: all 0.5s linear; 
+        }
         
         &:hover path {
-            transition: all 0.5s linear;
+
             fill: #04ff00;
         }
     
          &:active path {
-            transition: all 0.5s linear;
             fill: #f0ea40;
         }
     }
