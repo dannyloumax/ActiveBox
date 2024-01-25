@@ -40,6 +40,11 @@ html {
         }
     }
 
+    &.scrolled {
+        background: #252840;
+        z-index: 2;   
+    }
+
     &__logo {
         display: flex;
 

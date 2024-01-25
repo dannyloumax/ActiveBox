@@ -53,6 +53,11 @@ html {
   }
 }
 
+.header.scrolled {
+  z-index: 2;
+  background: #252840;
+}
+
 .header__logo {
   display: flex;
 }
